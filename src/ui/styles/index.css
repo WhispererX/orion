@@ -128,4 +128,90 @@ main {
 .icon-button:hover {
   background-color: var(--color-surface);
 }
+
+.context-menu {
+  position: fixed;
+  min-width: 200px;
+  background-color: var(--color-foreground);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 4px;
+  z-index: 10000;
+  user-select: none;
+}
+
+.context-menu-item {
+  display: grid;
+  grid-template-columns: 20px 1fr auto auto;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--color-heading);
+  font-size: 13px;
+  transition: background-color 0.1s ease;
+}
+
+.context-menu-item:hover:not(.disabled) {
+  background-color: var(--color-surface);
+}
+
+.context-menu-item.active {
+  background-color: var(--color-surface);
+}
+
+.context-menu-item.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.context-menu-item-icon-or-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.context-menu-item-icon-or-check img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.context-menu-item-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.context-menu-item-accelerator {
+  color: var(--color-muted);
+  font-size: 11px;
+  opacity: 0.7;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.context-menu-item:hover:not(.disabled) .context-menu-item-accelerator {
+  color: var(--color-heading);
+}
+
+.context-menu-item-submenu-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+}
+
+.context-menu-separator {
+  height: 1px;
+  background-color: var(--color-border);
+  margin: 4px 8px;
+}
 /*#endregion Components */

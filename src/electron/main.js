@@ -85,6 +85,12 @@ ipcMain.on('window:minimize', () => {
 	}
 });
 
+ipcMain.on('window:maximize', () => {
+	if (mainWindow) {
+		mainWindow.maximize();
+	}
+});
+
 ipcMain.on('window:restore', () => {
 	if (mainWindow) {
 		if (mainWindow.isMaximized()) {

@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '/icon.png'
 import TopBar from '../components/TopBar'
+import AddressBar from '../components/AddressBar'
 
 export default function HomePage() {
   return (
@@ -10,7 +11,9 @@ export default function HomePage() {
       </div>
       <TopBar />
       <div id="sidebar"></div>
-      <div id="outlet"></div>
+      <div id="main">
+        <AddressBar />
+      </div>
     </main>
   )
 }

@@ -18,7 +18,7 @@ main {
 
   grid-template-areas:
     "logo     topbar"
-    "sidebar  outlet";
+    "sidebar  main";
 }
 
 #logo {
@@ -54,8 +54,8 @@ main {
   grid-area: sidebar;
 }
 
-#outlet {
-  grid-area: outlet;
+#main {
+  grid-area: main;
   border-top-left-radius: 8px;
 
   --border-length: 70%;
@@ -116,6 +116,8 @@ main {
 }
 
 /*#region Components */
+
+/*#region Icon Button */
 .icon-button {
   all: unset;
 
@@ -136,7 +138,9 @@ main {
 .icon-button:hover {
   background-color: var(--color-surface);
 }
+/*#endregion Icon Button */
 
+/*#region Context Menu */
 .context-menu {
   position: fixed;
   min-width: 200px;
@@ -222,7 +226,9 @@ main {
   background-color: var(--color-border);
   margin: 4px 8px;
 }
+/*#endregion Context Menu */
 
+/*#region Tabs */
 #tabContainer, #tabs, .tab {
     display: flex;
     align-items: center;
@@ -323,5 +329,47 @@ main {
 .tab:hover .closeTabButton {
     display: flex;
 }
+/*#endregion Tabs */
+
+/*#region Address Bar */
+#addressBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+#navigationContainer {
+  display: flex;
+  align-items: center;
+}
+
+#searchContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-foreground);
+
+  #addressInput {
+    flex: 1;
+    padding: 6px 8px;
+    background: none;
+    border: none;
+    
+    font-size: 14px;
+    color: var(--color-heading);
+    outline: none;
+  }
+}
+
+#toolBar {
+  display: flex;
+  align-items: center;
+}
+/*#endregion Address Bar */
 
 /*#endregion Components */

@@ -23,12 +23,6 @@ export default function TopBar() {
             <div id="tabContainer">
                 <ul id="tabs">
                     <Tab title="New Tab" icon="https://media.discordapp.net/attachments/1252576401631084554/1443594599791853720/33ba06cefabadb1744f08293ca7bccb5.png?ex=694358fd&is=6942077d&hm=227ec3e241133366dafc4a65c58572cada548dd6709c432cf90f547d2b6e47f6&=&format=webp&quality=lossless" />
-                    <Tab title="New Tab" icon="https://media.discordapp.net/attachments/1252576401631084554/1443594599791853720/33ba06cefabadb1744f08293ca7bccb5.png?ex=694358fd&is=6942077d&hm=227ec3e241133366dafc4a65c58572cada548dd6709c432cf90f547d2b6e47f6&=&format=webp&quality=lossless" />
-                    <Tab title="New Tab" icon="https://media.discordapp.net/attachments/1252576401631084554/1443594599791853720/33ba06cefabadb1744f08293ca7bccb5.png?ex=694358fd&is=6942077d&hm=227ec3e241133366dafc4a65c58572cada548dd6709c432cf90f547d2b6e47f6&=&format=webp&quality=lossless" />
-                    <Tab title="New Tab" icon="https://media.discordapp.net/attachments/1252576401631084554/1443594599791853720/33ba06cefabadb1744f08293ca7bccb5.png?ex=694358fd&is=6942077d&hm=227ec3e241133366dafc4a65c58572cada548dd6709c432cf90f547d2b6e47f6&=&format=webp&quality=lossless" />
-                    <Tab title="New Tab" icon="https://media.discordapp.net/attachments/1252576401631084554/1443594599791853720/33ba06cefabadb1744f08293ca7bccb5.png?ex=694358fd&is=6942077d&hm=227ec3e241133366dafc4a65c58572cada548dd6709c432cf90f547d2b6e47f6&=&format=webp&quality=lossless" />
-                    <Tab title="New Tab" icon="https://media.discordapp.net/attachments/1252576401631084554/1443594599791853720/33ba06cefabadb1744f08293ca7bccb5.png?ex=694358fd&is=6942077d&hm=227ec3e241133366dafc4a65c58572cada548dd6709c432cf90f547d2b6e47f6&=&format=webp&quality=lossless" />
-                    <Tab title="New Tab" icon="https://media.discordapp.net/attachments/1252576401631084554/1443594599791853720/33ba06cefabadb1744f08293ca7bccb5.png?ex=694358fd&is=6942077d&hm=227ec3e241133366dafc4a65c58572cada548dd6709c432cf90f547d2b6e47f6&=&format=webp&quality=lossless" />
                 </ul>
                 <IconButton icon={<FaSquarePlus />} title="New Tab" className='addTabButton' onClick={() => window.electron.send('tab:new')} />    
             </div>

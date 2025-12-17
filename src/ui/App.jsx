@@ -1,11 +1,11 @@
 import React from 'react'
 import Logo from '/icon.png'
-import TopBar from '../components/TopBar'
-import AddressBar from '../components/AddressBar'
-import Bookmarks from '../components/Bookmarks'
-import Sidebar from '../components/Sidebar'
+import TopBar from './components/TopBar'
+import AddressBar from './components/AddressBar'
+import Bookmarks from './components/Bookmarks'
+import Sidebar from './components/Sidebar'
 
-export default function HomePage() {
+export default function App() {
   return (
     <main>
       <div id="logo">

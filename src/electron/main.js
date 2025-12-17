@@ -1,5 +1,5 @@
 // Core Electron imports
-import { app, BrowserWindow, nativeImage } from 'electron';
+import { app, BrowserWindow, ipcMain, nativeImage } from 'electron';
 
 // Node.js built-in modules
 import path from 'path';
@@ -33,6 +33,8 @@ const createWindow = () => {
 
 		frame: false,
 		resizable: true,
+		movable: true,
+		backgroundColor: '#222222',
 	});
 
 	if (IS_DEVELOPMENT) {
@@ -73,3 +75,31 @@ app.on('window-all-closed', () => {
 		app.quit();
 	}
 });
+
+//#region IPC Handlers
+
+//#region Window Controls
+ipcMain.on('window:minimize', () => {
+	if (mainWindow) {
+		mainWindow.minimize();
+	}
+});
+
+ipcMain.on('window:restore', () => {
+	if (mainWindow) {
+		if (mainWindow.isMaximized()) {
+			mainWindow.unmaximize();
+		} else {
+			mainWindow.maximize();
+		}
+	}
+});
+
+ipcMain.on('window:close', () => {
+	if (mainWindow) {
+		mainWindow.close();
+	}
+});
+//#endregion
+
+//#endregion

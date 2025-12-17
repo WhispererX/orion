@@ -1,13 +1,14 @@
 import React from 'react'
 import IconButton from './IconButton'
-import { FaArrowRotateRight, FaLessThan, FaGreaterThan, FaLock, FaRegHeart, FaHeart, FaDownload, FaGear } from "react-icons/fa6";
+import { FaArrowRotateRight, FaLock, FaRegHeart, FaHeart, FaDownload, FaGear } from "react-icons/fa6";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export default function AddressBar() {
   return (
     <div id="addressBar">
       <div id="navigationContainer">
-        <IconButton icon={<FaLessThan />} title="Back" onClick={() => window.electron.send('navigation:back')} />
-        <IconButton icon={<FaGreaterThan />} title="Forward" onClick={() => window.electron.send('navigation:forward')} />
+        <IconButton icon={<IoIosArrowBack />} title="Back" onClick={() => window.electron.send('navigation:back')} />
+        <IconButton icon={<IoIosArrowForward />} title="Forward" onClick={() => window.electron.send('navigation:forward')} />
         <IconButton icon={<FaArrowRotateRight />} title="Reload" onClick={() => window.electron.send('navigation:reload')} />
       </div>
 

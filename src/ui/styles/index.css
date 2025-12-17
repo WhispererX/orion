@@ -45,7 +45,7 @@ main {
   overflow: hidden;
   gap: 50px;
 
-  button, a, ul, ol, li {
+  button, a, li {
     -webkit-app-region: no-drag;
   }
 }
@@ -390,6 +390,32 @@ main {
   background-color: transparent;
 }
 
+.tab.bookmark:hover {
+  background-color: var(--color-surface);
+}
+
 /*#endregion Bookmarks */
+
+/*#region Sidebar */
+#sidebar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 25px;
+}
+
+.sidebarButton {
+  color: var(--color-primary);
+}
+
+.sidebarButton:last-of-type {
+  margin-top: auto;
+}
+/*#endregion Sidebar */
 
 /*#endregion Components */

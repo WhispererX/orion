@@ -3,6 +3,7 @@ import Logo from '/icon.png'
 import TopBar from '../components/TopBar'
 import AddressBar from '../components/AddressBar'
 import Bookmarks from '../components/Bookmarks'
+import Sidebar from '../components/Sidebar'
 
 export default function HomePage() {
   return (
@@ -11,7 +12,7 @@ export default function HomePage() {
         <img src={Logo} alt="Logo" width={30} height={30} />
       </div>
       <TopBar />
-      <div id="sidebar"></div>
+      <Sidebar />
       <div id="main">
         <AddressBar />
         <Bookmarks />

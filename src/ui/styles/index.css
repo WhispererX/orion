@@ -372,4 +372,24 @@ main {
 }
 /*#endregion Address Bar */
 
+/*#region Bookmarks */
+#bookmarks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0px 8px;
+  margin: 0;
+}
+
+.tab.bookmark {
+  width: auto;
+  min-width: auto;
+  padding: 4px 8px;
+
+  background-color: transparent;
+}
+
+/*#endregion Bookmarks */
+
 /*#endregion Components */

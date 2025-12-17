@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '/icon.png'
 import TopBar from '../components/TopBar'
 import AddressBar from '../components/AddressBar'
+import Bookmarks from '../components/Bookmarks'
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <div id="sidebar"></div>
       <div id="main">
         <AddressBar />
+        <Bookmarks />
       </div>
     </main>
   )

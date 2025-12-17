@@ -16,6 +16,7 @@ export default function HomePage() {
       <div id="main">
         <AddressBar />
         <Bookmarks />
+        {/* Outlet */}
       </div>
     </main>
   )

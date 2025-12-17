@@ -60,7 +60,7 @@ main {
 
   --border-length: 70%;
   --border-size: 1px;
-  --border-color: var(--color-primary-dark);
+  --border-color: var(--color-primary);
 
   background:
     linear-gradient(
@@ -276,7 +276,7 @@ main {
 }
 
 .tab:hover, .tab.active {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary);
 }
 
 .tab .tabIcon {

@@ -13,7 +13,7 @@ export default function AddressBar() {
       </div>
 
       <div id="searchContainer">
-        <FaLock id="lockIcon" />
+        <FaLock id="lockIcon" title='Site is secure' />
         <input type="text" id="addressInput" placeholder="Search or enter address" />
         <IconButton icon={<FaRegHeart />} title="Add to Favorites" onClick={() => window.electron.send('favorites:add')} />
       </div>

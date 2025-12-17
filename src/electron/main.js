@@ -3,7 +3,6 @@ import { app, BrowserWindow, nativeImage } from 'electron';
 
 // Node.js built-in modules
 import path from 'path';
-import fs from 'fs';
 
 // Application constants
 const DIST_REACT_PATH = '/dist-react/index.html';
@@ -31,6 +30,9 @@ const createWindow = () => {
 			preload: path.join(APP_PATH, 'src', 'electron', 'preload.js'),
 			webSecurity: !IS_DEVELOPMENT,
 		},
+
+		frame: false,
+		resizable: true,
 	});
 
 	if (IS_DEVELOPMENT) {
